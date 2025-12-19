@@ -176,3 +176,78 @@ body {
     .nav-links { display: none; } /* Hide links for a mobile menu later */
     .category-header h1 { font-size: 2rem; }
 }
+/* --- Footer Styling --- */
+.site-footer {
+    background: var(--dark);
+    color: white;
+    padding: 60px 8% 20px;
+    margin-top: 60px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-brand .logo {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer-brand p {
+    color: var(--gray);
+    max-width: 300px;
+    font-size: 0.9rem;
+}
+
+.footer-links h4, .footer-social h4 {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: var(--gray);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--primary);
+}
+
+.footer-social .social-icons {
+    color: var(--gray);
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    text-align: center;
+    color: var(--gray);
+    font-size: 0.85rem;
+}
+
+/* Mobile Footer Adjustment */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .footer-brand p {
+        margin: 0 auto;
+    }
+}

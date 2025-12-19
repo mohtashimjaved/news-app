@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Pulse News</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/21/21601.png" type="image/png">
 </head>
+
 <body>
 
     <nav class="navbar">
@@ -25,7 +28,32 @@
     <main id="news-container" class="news-grid">
         <p class="loading">Loading news...</p>
     </main>
-
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo">GlobalPulse</div>
+                <p>Your daily source for world-class journalism and breaking news from across the globe.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#" onclick="loadNews('general')">Home</a></li>
+                    <li><a href="#" onclick="loadNews('technology')">Technology</a></li>
+                    <li><a href="#" onclick="loadNews('business')">Business</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <span>Twitter</span> • <span>LinkedIn</span> • <span>GitHub</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GlobalPulse News. Powered by NewsAPI.</p>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
