@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Pulse News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">GlobalPulse</div>
+        <ul class="nav-links">
+            <li><a href="#" onclick="loadNews('general')">Home</a></li>
+            <li><a href="#" onclick="loadNews('business')">Business</a></li>
+            <li><a href="#" onclick="loadNews('technology')">Tech</a></li>
+            <li><a href="#" onclick="loadNews('sports')">Sports</a></li>
+        </ul>
+    </nav>
+
+    <header class="category-header">
+        <h1 id="current-category">Top Headlines</h1>
+    </header>
+
+    <main id="news-container" class="news-grid">
+        <p class="loading">Loading news...</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
